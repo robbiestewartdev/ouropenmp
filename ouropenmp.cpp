@@ -5,7 +5,6 @@
 #include <assert.h>
 #include "class_timer.hpp"
 
-using namespace cv;
 using namespace std;
 
 static void do_work( int nIndex, int nRepeats)
@@ -18,7 +17,9 @@ static void do_work( int nIndex, int nRepeats)
 		
 	timer.reset();
 	for( i=0; i<nRepeats; i++){
-		usleep(1000);
+		int k = 0;
+		for( k=0; k<100000; k++){
+		}
 	}
 	timer.out( szDesc);
 }
